@@ -1,0 +1,45 @@
+Objetivo de la aplicacion.- mediante los comando 
+node app -d "madrid españa" ó
+node app -d "madrid españa"
+
+Obtener el clima de las ciudades
+
+2.- YARGS permite crear comandos en la raiz de la aplicación.
+
+3.-City Geolocation
+En las próximas clases estaremos usando una API para obtener las coordenadas
+de una ciudad en base al nombre que recibamos como argumento, por lo que les 
+pido que vayan a este sitio web y se registren, es totalmente gratuito.
+
+City-geo-location-lookup - API
+https://rapidapi.com/dev132/api/city-geo-location-lookup
+
+En la siguiente clase enseñaré cómo obtener tu API key y usarlo, 
+pero es bueno pueden ir adelantando un poco.
+
+Ejercicio.-
+paso 1.- Copiar en el postman
+https://devru-latitude-longitude-find-v1.p.rapidapi.com/latlon.php?location=New+York
+
+paso 2.- Tiene que ser facilitado por los headers de la aplicación 
+x-rapidapi-key
+
+paso 3.- El valor tiene que ser nuestra APIKEY
+8c8dfa7123mshb479ffe454f4af2p1c439ajsn479b875a5b4f
+
+
+4.- Peticiones a la API de geolocalizacion utilizando axios ó request
+npm i axios   utilizamos este
+npm i request
+
+5.- Obtener el clima por latitud longitud y direccion
+openweathermap.org
+
+Llamada a la api por coordenadas
+api.openweathermap.org/data/2.5/weather?lat=35&lon=139
+ en postman poner
+
+ appid 513731d47dd3cf66f7f19c724d8a08c1
+
+ la temperatura esta en kelvin
+ units metric // convierte kelvin a centigrados
